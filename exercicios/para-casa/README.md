@@ -2,9 +2,19 @@
 
 ## Nome do Exercicio
 
-- Explicação do exercício: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci.
-Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. 
+- Explicação do exercício: Adivinhe o número.
+O usuário tem que adivinhar um número inteiro aleatório entre 0 e 50.
+
+Se ele acertou, então dar os parabéns e encerrar.
+Se for um número baixo, responder é maior
+Se for um número alto, responder que é menor.
+
+Extra: o usuário tem o limite de 5 tentativas para acertar o número
+
+OBS: usar este código para gerar um número aleatório
+Math.floor(Math.random()*(50 - 0 +1));
+
+
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
