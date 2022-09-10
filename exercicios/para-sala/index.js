@@ -1,15 +1,27 @@
 
-let email = prompt("Digite o email") 
+let email = prompt("Digite o email:") 
 
 let senha = prompt("Digite a senha:")
 
 
-
-if (email === "teste@reprograma.com" && senha === "teste123"){
-    alert("acesso permitido");
-}else{
-    alert ("email invalido")
+//caso um deles esteja errado escrever uma mensagem de erro e perguntar e-mail e senha novamente
+if (email === "teste@reprograma.com" || senha === "teste123"){ 
+    alert("Acesso permitido");
 }
+else {
+    alert("Email ou Senha inválido")
+    alert("Digite senha e email novamente!")
+
+}
+
+
+
+
+
+
+    
+ 
+	
 
 
 
