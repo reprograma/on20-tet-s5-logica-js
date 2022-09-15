@@ -1,8 +1,10 @@
 let numeroSorteado = Math.floor(Math.random()*(50 - 0 + 1));
 
-let palpite = Number(prompt("Adivinhe o número"))
+let palpite = Number(prompt("Adivinhe o número"));
 
-while (numeroSorteado !== palpite) {
+let tentativas = 5;
+
+while (numeroSorteado !== palpite && tentativas >= 0) {
   if (isNaN(palpite)) {
     alert("Por favor digite apenas números")
   } else if (numeroSorteado > palpite) {
@@ -11,5 +13,8 @@ while (numeroSorteado !== palpite) {
     alert("Você errou, o número sorteado é menor")
   }
   palpite = Number(prompt("Adivinhe o número"))
+  tentativas--;
 }
-alert("Parabéns, você acertou o número")
+if (tentativas >= 0) {
+  alert("Parabéns, você acertou o número")
+}
