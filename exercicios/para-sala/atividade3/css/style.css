@@ -1,0 +1,270 @@
+/* //////////////FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+/* //////////////CORPO */
+body {
+  margin:0;
+  padding: 0;
+  border: 0;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(0,0,0);
+  font-size: 67%;
+  font-family: 'Spline Sans Mono', monospace;
+}
+
+/* ////////////// Formatação do HEADER, lOGO e MENU */
+#logo {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#imglog {
+  width: 100px;
+  height: 100px;
+  margin: 60px 5px 5px 5px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: solid 1px;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: #000000;
+  border: solid 1px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  background: #fffefe;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: #72025d;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+/* //////////////LATERAL */
+aside {
+  float: right;
+  display: block;
+  position: fixed;
+  margin-right: 10px;
+  background: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.icone {
+  display: block;
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+}
+/* //////////////GERAL */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "atividade1 atividade2"
+  "atividade3 atividade4" 
+}
+main {
+  background: #ffffff6e;
+  display: block;
+  padding: 3vh;
+  margin-left: 100px;
+}
+h3{
+  text-align: center;
+  margin: 15px 5px 5px 5px;
+}
+.atividade{
+  padding: 30px;
+}
+.resposta_atividade{
+  color: #9601018c;
+}
+
+/* //////////////Cabeçalho da Semana 1 */
+
+div.tituloSemana{
+  display: inline-flex;
+  background: #F7DF29;
+  height: 200px;
+  text-align: center;
+  font-size: 1rem;
+  align-items: center;
+  
+}
+.testoSemana{
+  text-align: center;
+  padding: 20px 230px 20px 100px;
+}
+.imgSemana{
+  width: 150px;
+  height: 150px;
+  margin: 30px 30px 30px 100px;
+  border: 1px solid rgb(0, 0, 0);
+}
+p#semana{
+
+}
+h1#titulo{
+
+}
+p#subtitulo{
+
+}
+/* //////////////ATIVIDADE 1 */
+#atividade1 {
+  grid-area: atividade1 ;
+    width: 37vw;
+  height: 50vh;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+}
+/* //////////////ATIVIDADE 2 */
+#atividade2 {
+  grid-area: atividade2 ;
+  width: 37vw;
+  height: 50vh;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+}
+/* //////////////ATIVIDADE 3 */
+#atividade3 {
+  grid-area: atividade3 ;
+  width: 37vw;
+  height: 50vh;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+}
+/* //////////////ATIVIDADE 4 */
+#atividade4 {
+  grid-area: atividade4 ;
+  width: 37vw;
+  height: 50vh;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+}
+/* ////////////////////////////////////////////////// */
+.final-message, .password{
+  font-size: 5em;
+  font-family: serif;
+  color:#9e0707;
+  text-align: center;
+  animation: animate 1.5s linear infinite;
+} 
+ 
+@keyframes animate{
+  0%{
+    color:#000000;
+  }
+  50%{
+    color:#ff0505;
+  }
+  100%{
+    color:#000000;
+  }
+}
+/* ////////////////////////////////////////////////// */
+
+/* media query */
+@media (max-width: 1024px) {
+  .container {
+      max-width: 768px;
+      display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      max-width: 656px;
+      display: block;
+  }
+}
