@@ -12,5 +12,6 @@ while (email !== emailCorreto || senha !== senhaCorreta) {
   email = prompt('Digite seu email:')
   senha = prompt('Digite sua senha:')
 }
-if (email === emailCorreto && senha === senhaCorreta)
+if (email === emailCorreto && senha === senhaCorreta) {  
   alert('Login feito com sucesso!') 
+}
