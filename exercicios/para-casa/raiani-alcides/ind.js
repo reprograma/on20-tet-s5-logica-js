@@ -1,8 +1,8 @@
 let emailLogin = ("teste@reprograma.com")
 let senhaLogin = ("teste123")
 
-let perguntaEmail = String(prompt("Email"))
-let perguntaSenha = String(prompt("Senha"))
+let perguntaEmail = (prompt("Email"))
+let perguntaSenha = (prompt("Senha"))
 
 while (emailLogin !== perguntaEmail || senhaLogin !== perguntaSenha) {
     if (perguntaEmail !== emailLogin) {
@@ -12,8 +12,8 @@ while (emailLogin !== perguntaEmail || senhaLogin !== perguntaSenha) {
         alert("Senha Incorreta")
     }
     
-   perguntaEmail = String(prompt("Email"))
-   perguntaSenha = String(prompt("Senha"))
+   perguntaEmail = (prompt("Email"))
+   perguntaSenha = (prompt("Senha"))
 }
 
 alert("Login realizado com sucesso!")
